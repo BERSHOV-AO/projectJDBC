@@ -10,8 +10,11 @@ public class App {
         student.setName("Ivan");
         student.setSurname("Ivanov");
         student.setCourse_name("Automation QA");
-
         System.out.println(CRUDUtils.saveStudent(student));
+
+        System.out.println(CRUDUtils.updateStudent(1, "Automation QA"));
+
+        System.out.println(CRUDUtils.deleteStudents(1));
     }
 
 }
